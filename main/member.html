@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Registro</title>
+  <link rel="icon" href="../mueblesAltares.png">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mitr', sans-serif;
+      background-color: #fd7e1b;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 30px;
+      border: transparent;
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin: 10px auto;
+      padding: 10px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      border: 1px solid rgb(199, 198, 198);
+      border-radius: 10px;
+      padding: 5px 15px;
+      margin-top: 5px;
+      width: 100%;
+    }
+
+    button[type="submit"] {
+      border: transparent;
+      border-radius: 15px;
+      color: black;
+      margin: 15px auto;
+      padding: 10px 50px;
+      background-color: #298dba;
+      transition: 0.5s;
+      display: block;
+    }
+
+    button[type="submit"]:hover {
+      color: #fff;
+      background-color: #fd7e1b;
+    }
+
+    .returnlogin {
+      text-decoration: none;
+      font-size: 13px;
+      border-radius: 15px;
+      color: white;
+      display: inline-block;
+      margin: 15px auto 0;
+      padding: 10px 50px;
+      background-color: #fd7e1b;
+      transition: 0.5s;
+    }
+
+    .returnlogin:hover {
+      background-color: #298dba;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="add.php" method="post">
+      <div class="section">
+        <h1>Registro de Usuario</h1>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Usuario:</label>
+        <br>
+        <input type="text" name="username" placeholder="Elige tu nombre de usuario" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre:</label>
+        <br>
+        <input type="text" name="name" placeholder="Ingresa tu nombre completo" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña:</label>
+        <br>
+        <input type="password" name="password" placeholder="Ingresa tu contraseña" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Confirmar:</label>
+        <br>
+        <input type="password" name="cfpassword" placeholder="Confirma tu contraseña" required />
+      </div>
+      <div class="form-button">
+        <button type="submit">Registrar ahora</button>
+      </div>
+    </form>
+    <br>
+    <div class="form-button">
+      <a class="returnlogin" href="../index.html">¿Ya tienes una cuenta? Volver al login</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Muebles Altares</p>
+  </div>
+</body>
+
+</html>

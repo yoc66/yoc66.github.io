@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="icon" href="mueblesAltares.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: "Mitr", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            width: 50%;
+            margin: 150px auto;
+            background-color: white;
+            border-radius: 30px;
+            border: transparent;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+
+        .content label {
+            margin-right: 200px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border: 1px solid rgb(199, 198, 198);
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 3px 150px 6px 5px;
+        }
+
+        input[type="submit"] {
+            border: transparent;
+            border-radius: 15px;
+            color: white;
+            margin: 15px auto;
+            padding: 5px 50px;
+            background-color: #298dba;
+            transition: 0.5s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffffff;
+        }
+
+        .regis {
+            text-decoration: none;
+            font-size: 13px;
+            border-radius: 15px;
+            color: white;
+            margin: 15px;
+            padding: 5px 50px;
+            background-color: #ffffff;
+            transition: 0.5s;
+        }
+
+        .regis:hover {
+            background-color: #298dba;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Ingresar</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Usuario:</label>
+            <br>
+            <input type="text" name="username" placeholder="Ingresa tu usuario" required>
+            <br>
+            <label for="pass">Contraseña:</label>
+            <br>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
+            <br>
+            <input type="submit" value="Ingresar">
+        </form>
+        <a href="main/member.html" class="regis">Registro</a>
+    </div>
+    <div class="footer">
+        <p>Muebles Altares</p>
+    </div>
+</body>
+</html>
